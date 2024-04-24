@@ -540,3 +540,77 @@ body.dark-mode .gray-text {
 
 /* Add more selectors as needed to cover other elements with gray text in dark mode */
 
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #1a1a1a; /* Set a dark background color for the entire page */
+  color: white; /* Set the default text color to white */
+}
+
+/* Target specific elements for color adjustments in dark mode */
+body.dark-mode,
+body.dark-mode a,
+body.dark-mode .btn,
+body.dark-mode .contact-info-container p,
+body.dark-mode .details-container,
+body.dark-mode .color-container {
+  color: white; /* Adjust text color to white for specific elements */
+}
+
+/* Adjust background color for specific elements in dark mode */
+body.dark-mode .color-container,
+body.dark-mode .btn-color-2 {
+  background-color: #363636; /* Adjust background color for specific elements */
+}
+
+/* Adjust border color for specific elements in dark mode */
+body.dark-mode .details-container,
+body.dark-mode .color-container,
+body.dark-mode .btn-color-2 {
+  border-color: #555; /* Adjust border color for specific elements */
+}
+
+/* Add more selectors as needed to cover other elements in dark mode */
+/* Add this CSS code to your existing style.css file */
+
+/* Target specific elements for color adjustments in dark mode */
+body.dark-mode .text-container p {
+  color: white; /* Adjust text color to white for the text container */
+}
+/* For light mode */
+h3 {
+  color: black; /* or any other color for light mode */
+}
+
+/* For dark mode */
+.dark-mode h3 {
+  color: white; /* or any other color for dark mode */
+}
+/* For dark mode */
+.dark-mode #experience .details-container:nth-child(2) {
+  background-color: black; /* Background color for the second div in dark mode */
+  color: white; /* Text color for the second div in dark mode */
+}
+/* For dark mode */
+.dark-mode #experience .details-container:nth-child(1) {
+  background-color: black; /* Background color for the third div in dark mode */
+  color: white; /* Text color for the third div in dark mode */
+}
+/* For screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+  /* Adjust the width of the section containers */
+  #about .section-container,
+  #experience .experience-details-container {
+    width: 100%;
+  }
+
+  /* Adjust the layout of the about details */
+  #about .about-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Adjust the layout of the skills and projects sections */
+  #experience .about-containers {
+    flex-direction: column;
+  }
+}
